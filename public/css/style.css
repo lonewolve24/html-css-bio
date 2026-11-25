@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+ 
+#navbar{
+    position: sticky;
+    top:-5px;
+    z-index: 2;
+    background: #0F172A;
+    color: #fff;
+    width: 100%;
+}
+
+
+ .container{
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+  }
+
+#logo i{
+
+    color: #14B8A6;
+}
+
+#logo span {
+
+    color: #f4f4f4;
+}
+
+#logo{
+
+    color: #14B8A6;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+#nav-link{
+
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+#nav-link li{
+    margin: 0 1rem;
+}
+
+#nav-link a{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+}
+
+#nav-link a:hover{
+    background: #14B8A6;
+    color: #0F172A;
+    border-radius: 5px;
+}
+#Hero{
+    background: url(/image/image-1.jpg) no-repeat
+    center center/cover ;
+    height: 75vh
+}
+
+.hero-box{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.hero-content  h1{
+
+    font-size: 50px;
+    color: #14B8A6;
+
+}
+
+.hero-box p {
+
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero-content a {
+
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #14B8A6;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+.hero-content a:hover{
+
+    background-color: #fff;
+    color: #0F172A;
+}
+
+.hero-img{
+    position: relative;
+    width: 30%;
+    height: 50%;
+    border:solid 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:solid 5px #011649
+}
+
+.hero-img:hover{
+      border:solid 5px #039180;
+
+    
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    
+}
+
+.hero-img:hover img {
+
+     transform: scale(1.08);
+}
+
+
+
+
+#what {
+    background: #f4f4f4;
+    color: #333;
+    padding: 3rem 0;
+}
+
+#what h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+#what h2 span {
+    color: #14B8A6;
+}
+
+#what .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+#what .items .item {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    
+}
+
+#what .items .item:hover {
+    background: #dff7f4; /* soft teal tint used on card hover */
+    /* transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); */
+}
+
+#what .items .item i {
+    background: #14B8A6; /* teal used for the icon circle */
+    padding: 2rem;
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#what .items .item:hover i {
+    background: #039180 /* dark navy used for icon circle on hover */
+}
+
+#what .items .item h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+}
+
+#what .items .item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+
+.section{
+
+    padding: 4rem 1rem;
+}
+
+.section2{
+
+    background-color: #0F172A;
+}
+
+
+.service-title2{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+}
+
+.service-title2 h3{
+
+    font-size: 3rem;
+    color: #f0edf1;
+}
+
+
+.service-grid{
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    border: #f0edf1 2px solid;
+
+}
+
+.service-name{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.service-name img{
+
+    display: block;
+    /* fixed: width 10% was unreliable in flex — fixed size keeps icons consistent on all screens */
+    width: 2rem;
+    height: 2rem;
+}
+
+.service-name h3{
+
+    margin-left: 0.55rem;
+    margin-top: 0.25rem;
+    font-size: 1.5rem;
+    color: #0F172A;
+    
+}
+
+.service{
+
+    background-color: #f0edf1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.service:hover{
+
+    background-color: #14B8A6;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.service p{
+
+    text-align: justify;
+    
+}
+
+.cta{
+
+    background-color: #14B8A6;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.cta-btn{
+
+     display: inline-block;
+    background-color: #f0edf1;
+    color: #0F172A;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+
+}
+
+.cta-btn:hover{
+
+     display: inline-block;
+    background-color: #0F172A;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+
+}
+
+
+.arrow-left{
+
+    position: fixed;
+    top: 70%;
+    right: 30px;
+    z-index: 1;
+    color: #f4f4f4;
+}
+
+.arrow-left i{
+    
+    background: #14B8A6;
+    padding: 1.5rem;
+    border-radius: 20px;
+    
+
+}
+
+
+
+footer{
+    background-color: #0F172A;
+    color: #f0edf1;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
